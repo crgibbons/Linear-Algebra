@@ -1,0 +1,66 @@
+\documentclass[hidelinks,12pt,handout]{ximera}
+\usepackage{amssymb,amsmath,graphicx,hyperref,amsthm}
+\usepackage{fancyhdr}
+\usepackage{fullpage}
+
+\hypersetup{ pdfnewwindow=true, pdffitwindow=false }
+
+\newcommand{\defi}[1]{\textbf{\textit{#1}}}
+
+\title{Linear Systems}
+\begin{document}
+\begin{abstract}{What puts the ``linear'' in ``Linear Algebra?'' Turns out that this adjective refers to properties of linear systems.}\end{abstract}
+\maketitle
+
+\begin{definition}
+\begin{itemize}
+\item If a linear system has at least one solution, we say the system is \defi{consistent}.
+\item If a linear system has exactly one solution, we say the solution is \defi{unique}.
+\item If a linear system has no solutions, we say the system is \defi{inconsistent}.
+\item If two linear systems have exactly the same solutions, we call them \defi{equivalent}.
+\item If $b_1 = b_2 = \cdots = b_m = 0$ in a linear system with $m$ equations, we say the system is \defi{homogeneous}.
+\item If $x_1 = x_2 = \cdots = x_n = 0$ is a solution to a linear system in $n$ unknowns, we say the system has the \defi{trivial solution}.
+%\item If for some $j$, $1 \leq j \leq n$, $x_j \not = 0$ and $x_j$ is part of a solution to a linear system in $n$ unknowns, we say the system has a \defi{nontrivial solution}.
+\end{itemize}
+\end{definition}
+
+For each of the following, write down an example or explain why one can't exist:
+\begin{question}
+an inconsistent linear system in 2 unknowns;
+\vfill
+\end{question}
+
+\begin{question}
+an inconsistent homogeneous linear system in 2 unknowns;
+\vfill
+\begin{hint} Try starting with one equation, like $x+y = 0$, and then trying to come up with another equation that, when added, makes the system inconsistent. Can you do it? \end{hint}
+\end{question}
+
+\begin{question}a unique solution to the linear system 
+	\begin{eqnarray*} x + 4 y & = & 12 \\
+				   3x + 8y &=&  4;
+	\end{eqnarray*}
+	\vfill
+\end{question}
+
+\begin{question}
+a nonhomogeneous system with the trivial solution;
+\vfill
+\end{question}
+
+\begin{question} a linear system with three equations that is equivalent to the linear system
+	\begin{eqnarray*} x + 4 y & = & 12 \\
+				   3x + 8y &=&  4.
+	\end{eqnarray*}
+	\vfill
+\end{question}
+
+\begin{question} Jot down any conjectures you have about the way these various properties are related.
+
+\begin{hint} A \textit{conjecture} is a statement that you think is true but that doesn't have a proof (yet). 
+\end{hint}
+\vfill
+\end{question}
+\end{document}
+
+
